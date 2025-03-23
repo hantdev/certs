@@ -1,0 +1,24 @@
+with-expecter: true
+filename: "{{.InterfaceName}}.go"
+outpkg: "mocks"
+packages:
+  github.com/hantdev/certs:
+    interfaces:
+      Service:
+        config:
+          dir: "{{.InterfaceDir}}/mocks"
+          filename: "service.go"
+      Repository:
+        config:
+          dir: "{{.InterfaceDir}}/mocks"
+          filename: "repository.go"
+      CertsServiceClient:
+        config:
+          dir: "{{.InterfaceDir}}/mocks"
+          filename: "certs_client.go"
+  github.com/hantdev/certs/sdk:
+    interfaces:
+      SDK:
+        config:
+          dir: "{{.InterfaceDir}}/mocks"
+          filename: "sdk.go"
