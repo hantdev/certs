@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	Organization                 = "hantdev"
+	Organization                 = "Trost"
 	emailAddress                 = "captainnemot1k60@gmail.com"
 	PrivateKeyBytes              = 2048
 	RootCAValidityPeriod         = time.Hour * 24 * 365 // 365 days
